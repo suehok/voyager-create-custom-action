@@ -24,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Custom Action for publish posts
         Voyager::addAction(\App\Actions\PublishAction::class);
 
     }

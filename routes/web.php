@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 Route::group(['prefix' => 'admin'], function () {
-    Route::get('posts/publish','Voyager\PostController@publish')->name('posts.publish');
 
+    Route::get('posts/publish','Voyager\PostController@publish')->name('posts.publish');
     Voyager::routes();
 });
